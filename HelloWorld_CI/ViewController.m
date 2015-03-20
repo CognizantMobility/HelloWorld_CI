@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSString *s1 = @"Hello";
+    NSString *s2 = @"Hello";
+    
+    NSString *s3 = [[NSString alloc] initWithString:s1];
+    NSString *s4 = [[NSString alloc] initWithString:s2];
+    NSSet *set = [[NSSet alloc] initWithObjects:s1,s2,s3,s4, nil];
+    NSLog(@"%@",set);
 }
 
 - (void)didReceiveMemoryWarning {
